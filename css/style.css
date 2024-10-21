@@ -629,15 +629,19 @@ body {
     .icono-hamburguesa {
         display: block;
     }
-
+    .contenedor-menu {
+        box-sizing: border-box;
+    }
     .menu {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         width: 100%;
         background-color: #c76fcd;
         position: absolute;
         top: 60px;
         left: 0;
+        box-sizing: border-box;
     }
 
     .menu-toggle:checked + .icono-hamburguesa + .menu {
