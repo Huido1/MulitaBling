@@ -31,7 +31,7 @@ p {
 
 footer p{
     color: white;
-    font-size: 2 rem;
+    font-size: 2rem;
 }
 
 form {
@@ -569,6 +569,7 @@ body {
     .productos-grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
     }
+}
     
     @media (max-width: 480px) {
         h1, h2 {
@@ -617,7 +618,7 @@ body {
 }
 
 
-.menu-superior {
+.menu {
     display: flex;
     flex-direction: row;
 }
@@ -629,9 +630,6 @@ body {
         display: block;
     }
 
-    
-
-    
     .menu {
         display: none;
         flex-direction: column;
@@ -643,7 +641,6 @@ body {
     }
 
     .menu-toggle:checked + .icono-hamburguesa + .menu {
-        display: flex;
+        display: flex; 
     }
 }
-
