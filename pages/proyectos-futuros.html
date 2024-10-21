@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Proyectos futuros</title>
+</head>
+<body>
+    <!--Logo y menu de navegacion. Estructura header va a ser la misma en todos los html-->
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="../fotos/descarga.jpeg" alt="Logo de mulita Bling"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="icono-hamburguesa">&#9776;</label>
+            <nav class="menu">
+                <div class="contenedor-menu">
+                    <ul class="menu-superior">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./proyectos-futuros.html">Proyectos futuros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- El dection de proyectos futuros va a consistir de algun texto con especificidad a definir y un pequeño text area para darle la posibilidad a quien venga de que nos envie alguna idea en particular-->
+        <section>
+            <div>
+                <h1>Proyectos futuros</h1>
+                <p>Be aware! Que pasaria si en un futuro los diseños de mulita bling se aplicaran a otras cosas? Porque tigris y yo somos muy amables vamos a dejarles una pista.... Tengase preparado lo siguiente:</p>
+                <ul class="future-proyecto">
+                    <li><p>Cuadernos anillados</p></li>
+                    <li><p>Listas y agendas</p></li>
+                    <li><p>Anteojos</p></li>
+                    <li><p>Elementro ultra sorpresa, estate atento y segui la pagina!</p></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="seccion-proyectos">
+            <h2>Contanos que cosas nuevas te gustarian</h2>
+            <div class="proyectos-box">
+                <form class="proyectos-form" action="/submit" method="post">
+                    <div class="formulario-box">
+                        <textarea name="Contanos que nuevos proyectos te gustarian!" id="Contanos que nuevos proyectos te gustarian!"></textarea>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    
+                </form>
+            </div>           
+        </section>
+    </main>
+    
+    <!-- Redes sociales y vuelta a inicio. Estructura footer va a ser la misma en todas las paginas-->
+    <footer>
+        <div class="arriba">
+            <p class="texto-izquierda">Conocé nuestras redes</p>
+            <div class="inicio-centro">
+                <a href="../index.html"><img src="../fotos/home-png.png" alt="Logo home"></a>
+            </div>
+            <div class="redes">
+                <ul>
+                    <li><a href="https://facebook.com"><img src="../fotos/facebook-png.png" alt="Facebook"></a></li>
+                    <li><a href="https://instagram.com"><img src="../fotos/instagram-png.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com"><img src="../fotos/x-png.png" alt="X"></a></li>
+                    <li><a href="https://youtube.com"><img src="../fotos/youtube-png.png" alt="Youtube"></a></li>
+                </ul>
+            </div>
+        </div>    
+        <div class="abajo">
+            <p>&copy; 2024 Mulita Bling - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

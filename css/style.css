@@ -1,0 +1,649 @@
+/*Primero voy a importar un estilo de fuente para linkearlo*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Aplico letra importada y protocolos de tamaño de letra tal visto en clase*/
+html {
+    font-family: "quicksand", sans-serif;
+    font-size: 62.5%;
+}
+
+/*Color y tamaño de titulos y parrafo*/
+h1 {
+    font-size: 3.5rem;
+    color: rgb(255, 21, 185); /* La idea es que el titulo tenga un rosa mas fuerte para combinar con el fondo*/
+}
+
+h2{
+    font-size: 2.5rem;
+    color: rgb(255, 21, 185);
+}
+
+p {
+    font-size: 1.5rem;
+    color: #7a1bb9;
+}
+
+.productos ul{
+    list-style-type: none;
+    color: #7a1bb9;
+    font-size: 1.5rem;
+}
+
+footer p{
+    color: white;
+    font-size: 2 rem;
+}
+
+form {
+    color: #7a1bb9;
+    font-size: 1.5rem;
+}
+
+/* Tamaños de imagen footer y div*/
+
+header {
+    text-align: center;
+}
+
+
+header img {
+    width: 150px;
+    border: 5px solid blue;
+    height: auto;
+    display: inline-block;
+}
+
+
+footer img {
+    width: 50px;
+}
+
+/*FOrmato de listas nav y footer*/
+
+header ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.menu-superior a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*Formato de color con rosados que contrasten a pedido de la creadora del emprendimiento, agregado de texto al centro para visual*/ 
+
+header, footer {
+    background-color: #c76fcd;
+}
+
+/* Voy a trabajar el body */
+
+body {
+    background-color: #fd9ff9;
+    text-align: center;
+}
+
+.parrafo-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px
+}
+
+.parrafo-inicio p {
+    max-width: 60%;
+}
+
+.foto1-index {
+    margin: 10px;
+}
+
+.foto2-index {
+    margin-bottom: 50px;
+}
+
+.lanzamientos-index {
+    text-align: center;
+}
+
+.lanzamientos-index h2 {
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.grid-container .hades-pegasus {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .hades-pegasus img {
+    width: 300px;
+    
+}
+
+.grid-container .hera-llama {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .hera-llama img {
+    width: 300px;
+}
+
+.grid-container .kore-mulita {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .kore-mulita img {
+    width: 300px;
+}
+
+.mulita-secrets {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.mulita-secrets h2 {
+    margin-bottom: 20px;
+}
+
+.secrets-container {
+    display: grid;
+    grid-template-areas:
+        "hera hera kore kore"
+        "hades hades ares ares";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.set-hera {
+    grid-area: hera;
+}
+
+.set-kore {
+    grid-area: kore;
+}
+
+.set-hades {
+    grid-area: hades;
+}
+
+.set-ares {
+    grid-area: ares;
+}
+
+.set-hera, .set-kore, .set-hades, .set-ares {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.set-ares img, .set-hades img, .set-hera img, .set-kore img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+}
+
+.set-hera img:hover,
+.set-kore img:hover,
+.set-hades img:hover,
+.set-ares img:hover {
+    transform: scale(1.05); 
+}
+
+
+
+
+
+
+.arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.arriba .redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.arriba .redes ul {
+    display: flex
+}
+
+.arriba p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.abajo p {
+    display: flex;
+    font-size: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.listas-formulario {
+    display: inline-block;
+}
+
+/* Trabajo sobre la pestaña de sobre nosotros para darle forma a la tarjeta de presentacion*/
+
+.tarjeta-presentacion {
+    text-align: center;
+}
+
+.grid-presentacion {
+    display: grid;
+    grid-template-areas: 
+        "tigris tigris presen presen"
+        "tigris tigris presen presen";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tigris {
+    grid-area: tigris;
+    height: auto;
+}
+
+.tigris img {
+    width: 100%;
+}
+
+.texto-presentacion {
+    grid-area: presen;
+}
+
+.mapa {
+    width: 80%;
+    height: auto;
+}
+
+/* Trabajo sobre la pestaña de productos para acomodar los mismos*/
+
+.productos {
+    display: grid;
+    grid-template-areas: 
+        "hades hera"
+        "kore demeter";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hades-pegasus1 {
+    grid-area: hades;
+}
+
+.hera-llama1 {
+    grid-area: hera;
+}
+
+.kore-mulita1 {
+    grid-area: kore;
+}
+
+.demeter-colibri1 {
+    grid-area: demeter;
+}
+
+.demeter-colibri1 img {
+    max-height: 300px;
+}
+
+
+.productos {
+    text-align: center;
+}
+
+.productos img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0 #0007;
+}
+
+.productos button {
+    background-color:#000080;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+/* Pestaña de proyecto futuro */
+
+.future-proyecto {
+    list-style-type: none
+}
+
+.future-proyecto li {
+    font-size: 1rem;
+    color: #7a1bb9;
+    list-style-type: none
+}
+
+.seccion-proyectos {
+    margin: 100px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.propuesta-proyecto {
+    text-align: center;
+}
+
+.proyectos-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.proyectos-box label { 
+    margin-bottom: 10px;
+}
+
+.proyectos-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.formulario-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+}
+
+.formulario-box textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.formulario-box input[type="submit"] {
+    background-color: #000080;
+    color: #ddd;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.formulario-box input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+
+
+/* Trabajo sobre la pestaña de contacto */
+
+.seccion-contacto {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 0 #0007;
+    margin: 0 auto;
+}
+
+.contenedor-contacto h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-contacto p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.listas-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.form-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+}
+
+.form-box label {
+    margin-bottom: 10px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-box input[type="submit"] {
+    background-color: #000080;
+    color: #ddd;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+
+
+/*Diseño responsive*/
+
+@media (max-width: 934px) {
+    
+    /* Ajusto el tamaño de titulos y parrafo para que quede mas acorde pero aun legible */
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .parrafo-inicio {
+        box-sizing: border-box;
+    }
+
+    .parrafo-inicio p {
+        max-width: 90%;
+        font-size: 1.3rem;
+    }
+
+    /* Ajusto la barra de arriba */
+
+    .menu-superior {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    /* Grids del fondo de la pantalla */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .arriba {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes ul {
+        justify-content: center;
+    }
+
+    .arriba .inicio-centro {
+        margin: 10px 0;
+    }
+
+    /* Responsive pagina de productos */
+
+    .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+    
+    @media (max-width: 480px) {
+        h1, h2 {
+            font-size: 2rem;
+        }
+    
+        p {
+            font-size: 1.5rem;
+        }
+
+        .parrafo-inicio {
+            box-sizing: border-box;
+        }
+
+        .parrafo-inicio p {
+            max-width: 90%;
+            font-size: 1.3rem;
+        }
+
+        .grid-container .hades-pegasus img,
+    .grid-container .hera-llama img,
+    .grid-container .kore-mulita img {
+        width: 60%;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    .redes ul {
+        justify-content: center;
+    }
+
+    }
+/* Header hamburguesa para el nav */
+.menu-toggle {
+    display: none;
+}
+
+
+.icono-hamburguesa {
+    display: none; 
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+.menu-superior {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 934px) {
+    
+    .icono-hamburguesa {
+        display: block;
+    }
+
+    
+
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #c76fcd;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-toggle:checked + .icono-hamburguesa + .menu {
+        display: flex;
+    }
+}
+
