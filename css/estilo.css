@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/* Colores */
+/*Primero voy a importar un estilo de fuente para linkearlo*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/* Aplico letra importada y protocolos de tamaño de letra tal visto en clase*/
+html {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+}
+
+/*Trabajo sobre el body general*/
+body {
+  background-color: #fd9ff9;
+  text-align: center;
+}
+
+/*Color y tamaño de titulos y parrafo*/
+h1 {
+  font-size: 3.5rem;
+  color: rgb(255, 21, 185); /* La idea es que el titulo tenga un rosa mas fuerte para combinar con el fondo*/
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: rgb(255, 21, 185);
+}
+
+p {
+  font-size: 1.5rem;
+  color: #7a1bb9;
+}
+
+/* Colores */
+header {
+  background-color: #c76fcd;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+header .wrapper {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+header .wrapper .logo img {
+  width: 150px;
+  border: 5px solid blue;
+  height: auto;
+  display: inline-block;
+}
+header .wrapper .hamburguesa .menu-toggle {
+  display: none;
+}
+header .wrapper .menu {
+  display: flex;
+  justify-content: center;
+}
+header .wrapper .menu .contenedor-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .wrapper .menu .contenedor-menu .menu-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  padding: 10px;
+  margin: 0px;
+}
+header .wrapper .menu .contenedor-menu .menu-superior a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #c76fcd;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+}
+footer p {
+  color: white;
+  font-size: 2rem;
+}
+footer img {
+  width: 50px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer .arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .arriba .redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .arriba .redes ul {
+  display: flex;
+}
+footer .abajo {
+  display: flex;
+  font-size: 2rem;
+}
+
+/* Colores */
+.parrafo-inicio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px p;
+  padding-max-width: 60%;
+}
+
+.foto1-index {
+  margin: 10px;
+}
+
+.foto2-index {
+  margin-bottom: 50px;
+}
+
+.lanzamientos-index {
+  text-align: center;
+}
+.lanzamientos-index h2 {
+  margin-bottom: 30px;
+}
+.lanzamientos-index .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: center;
+}
+.lanzamientos-index .grid-container .hades-pegasus {
+  padding: 15px;
+  text-align: center;
+}
+.lanzamientos-index .grid-container .hades-pegasus img {
+  width: 300px;
+}
+.lanzamientos-index .grid-container .hera-llama {
+  padding: 15px;
+  text-align: center;
+}
+.lanzamientos-index .grid-container .hera-llama img {
+  width: 300px;
+}
+.lanzamientos-index .grid-container .kore-mulita {
+  padding: 15px;
+  text-align: center;
+}
+.lanzamientos-index .grid-container .kore-mulita img {
+  width: 300px;
+}
+
+.mulita-secrets {
+  text-align: center;
+  padding: 10px 10px;
+}
+.mulita-secrets h2 {
+  margin-bottom: 20px;
+}
+.mulita-secrets .secrets-container {
+  display: grid;
+  grid-template-areas: "hera hera kore kore" "hades hades ares ares";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.mulita-secrets .secrets-container .set-hera {
+  grid-area: hera;
+}
+.mulita-secrets .secrets-container .set-kore {
+  grid-area: kore;
+}
+.mulita-secrets .secrets-container .set-hades {
+  grid-area: hades;
+}
+.mulita-secrets .secrets-container .set-ares {
+  grid-area: ares;
+}
+.mulita-secrets .secrets-container .set-hera, .mulita-secrets .secrets-container .set-kore, .mulita-secrets .secrets-container .set-hades, .mulita-secrets .secrets-container .set-ares {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.mulita-secrets .secrets-container .set-ares img, .mulita-secrets .secrets-container .set-hades img, .mulita-secrets .secrets-container .set-hera img, .mulita-secrets .secrets-container .set-kore img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.mulita-secrets .secrets-container .set-hera img:hover,
+.mulita-secrets .secrets-container .set-kore img:hover,
+.mulita-secrets .secrets-container .set-hades img:hover,
+.mulita-secrets .secrets-container .set-ares img:hover {
+  transform: scale(1.05);
+}
+
+/* Colores */
+.col-md-8 {
+  display: flex;
+  align-items: center;
+}
+
+section.text-center.my-4 p {
+  margin-top: 50px;
+}
+
+.text-center {
+  margin-bottom: 50px;
+}
+
+/* Colores */
+.productos {
+  display: grid;
+  grid-template-areas: "hades hera" "kore demeter";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.productos hades-pegasus1 {
+  grid-area: hades;
+}
+.productos .hera-llama1 {
+  grid-area: hera;
+}
+.productos .kore-mulita1 {
+  grid-area: kore;
+}
+.productos .demeter-colibri1 {
+  grid-area: demeter;
+}
+.productos img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+}
+.productos button {
+  background-color: #000080;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.productos button:hover {
+  background-color: #004080;
+}
+
+/* Colores */
+/* Colores */
+.seccion-contacto {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+  margin: 0 auto;
+}
+.seccion-contacto .listas-formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+}
+.seccion-contacto .listas-formulario label, .seccion-contacto .listas-formulario input[type=text], .seccion-contacto .listas-formulario input[type=email], .seccion-contacto .listas-formulario textarea {
+  font-size: 1.5rem;
+  color: #7a1bb9;
+}
+
+/* Colores */
+@media (max-width: 934px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .parrafo-inicio {
+    box-sizing: border-box;
+  }
+  .parrafo-inicio p {
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+  .wrapper .menu {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #c76fcd;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .wrapper .menu .contenedor-menu {
+    box-sizing: border-box;
+  }
+  .wrapper .menu .contenedor-menu .menu-superior {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .wrapper .hamburguesa .icono-hamburguesa {
+    display: block;
+  }
+  .wrapper .hamburguesa .menu-toggle:checked + .icono-hamburguesa + .menu {
+    display: flex;
+  }
+  header img {
+    width: 100px;
+  }
+  .lanzamientos-index .grid-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+  .arriba {
+    flex-direction: column;
+    text-align: center;
+  }
+  .arriba .inicio-centro {
+    margin: 10px 0;
+  }
+  .redes ul {
+    justify-content: center;
+  }
+  .productos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .parrafo-inicio {
+    box-sizing: border-box;
+  }
+  .parrafo-inicio p {
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+  .grid-container .hades-pegasus img,
+  .grid-container .hera-llama img,
+  .grid-container .kore-mulita img {
+    width: 60%;
+  }
+  header img {
+    width: 80px;
+  }
+  .redes ul {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

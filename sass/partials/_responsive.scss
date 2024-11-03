@@ -1,0 +1,131 @@
+@import "variables";
+@import "mixin";
+
+@media (max-width: 934px) {
+    
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .parrafo-inicio {
+        box-sizing: border-box;
+
+        p {
+            max-width: 90%;
+            font-size: 1.3rem;
+        }
+    }
+
+    .wrapper {
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #c76fcd;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            box-sizing: border-box;
+            .contenedor-menu {
+                box-sizing: border-box;
+                .menu-superior{
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                }
+            }
+        }
+        .hamburguesa{
+            display: block;
+            .icono-hamburguesa {
+                display: block;
+                cursor: pointer;
+            }
+            .menu-toggle:checked + .icono-hamburguesa + .menu {
+                display: flex; 
+            }
+        }
+    }
+
+
+    header {
+        img {
+            width: 100px;
+        }
+    }
+
+    .lanzamientos-index {
+        .grid-container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 100%;
+        }
+    }
+
+    .arriba {
+        flex-direction: column;
+        text-align: center;
+
+        .inicio-centro {
+            margin: 10px 0;
+        }
+    }
+
+    .redes {
+        ul {
+            justify-content: center;
+        }
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .parrafo-inicio {
+        box-sizing: border-box;
+
+        p {
+            max-width: 90%;
+            font-size: 1.3rem;
+        }
+    }
+
+    .grid-container {
+        .hades-pegasus img,
+        .hera-llama img,
+        .kore-mulita img {
+            width: 60%;
+        }
+    }
+
+    header {
+        img {
+            width: 80px;
+        }
+    }
+
+    .redes {
+        ul {
+            justify-content: center;
+        }
+    }
+}
+
+

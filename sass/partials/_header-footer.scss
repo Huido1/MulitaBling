@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixin";
+
+header {
+    background-color: $color-footer-header;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px 0 #0007;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5rem;
+    }
+    
+
+    .wrapper {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        .logo {
+            img {
+                width: 150px;
+                border: 5px solid blue;
+                height: auto;
+                display: inline-block;
+            }
+        }
+
+        .hamburguesa {
+            .menu-toggle {
+                display: none;
+            }
+            .icono-hamburguesa {
+                display: none; 
+                font-size: 2.5rem;
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            .contenedor-menu {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .menu-superior {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 50%;
+                    padding: 10px;
+                    margin: 0px;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+footer {
+
+    background-color: $color-footer-header;
+    box-shadow: 0 0 15px 0 #0007;
+    p{
+        color: white;
+        font-size: 2rem;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    .arriba {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .redes{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            ul {
+                display: flex
+            }
+        }
+    }
+    .abajo {
+        display: flex;
+        font-size: 2rem;
+    }
+}

@@ -507,6 +507,21 @@ body {
     background-color: #004080;
 }
 
+/* Agregado de Bootstrap a la pestaña de Sobre Nosotros */
+
+.col-md-8 {
+    display: flex;
+    align-items: center;
+}
+
+section.text-center.my-4 p {
+    margin-top: 50px;
+}
+
+.text-center {
+    margin-bottom: 50px;
+}
+
 
 
 /*Diseño responsive*/

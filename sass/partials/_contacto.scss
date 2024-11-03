@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixin";
+
+.seccion-contacto {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 0 #0007;
+    margin: 0 auto;
+    .listas-formulario {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+        label, input[type="text"], input[type="email"], textarea {
+            font-size: 1.5rem;
+            color: $color-parrafo;
+        }
+    }
+}
+

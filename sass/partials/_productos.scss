@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixin";
+
+.productos {
+    display: grid;
+    grid-template-areas: 
+        "hades hera"
+        "kore demeter";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+
+    hades-pegasus1 {
+        grid-area: hades;
+    }
+    
+    .hera-llama1 {
+        grid-area: hera;
+    }
+    
+    .kore-mulita1 {
+        grid-area: kore;
+    }
+    
+    .demeter-colibri1 {
+        grid-area: demeter;
+    }
+
+    img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 15px 0 #0007;
+    }
+
+    button {
+        @include button-style
+    }
+
+}
