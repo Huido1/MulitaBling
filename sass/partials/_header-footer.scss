@@ -34,17 +34,15 @@ header {
             }
         }
 
-        .hamburguesa {
             .menu-toggle {
                 display: none;
             }
             .icono-hamburguesa {
-                display: none; 
+                /**display: none;**/ 
                 font-size: 2.5rem;
                 cursor: pointer;
                 color: white;
             }
-        }
 
         .menu {
             display: flex;

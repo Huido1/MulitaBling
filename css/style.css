@@ -659,7 +659,7 @@ section.text-center.my-4 p {
         box-sizing: border-box;
     }
 
-    .menu-toggle:checked + .icono-hamburguesa + .menu {
+    .menu-toggle:checked + .icono-hamburguesa + .menu-superior {
         display: flex; 
     }
 }
