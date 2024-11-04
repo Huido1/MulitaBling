@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="./css/style.css">-->
     <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title> La mulita Bling </title> 
     <link rel="icon" href="./fotos/descarga (1).jpeg" type="image/jpeg">
 </head>
@@ -19,6 +19,7 @@
             </div>
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
                 <label for="menu-toggle" class="icono-hamburguesa">&#9776;</label>
+                
             
             <nav class="menu">
                 <div class="contenedor-menu">
@@ -34,7 +35,10 @@
         </div>
     </header>
     <main>
-        <h1>Bienvenido a la mulita Bling</h1>
+        <div data-aos="fade-up">
+            <h1>Bienvenido a la mulita Bling</h1>
+        </div>
+        
         <!-- El section esta conformado por un titulo, una pequeña descripcion y una fotito -->
         <section>
             <div class="parrafo-inicio">
@@ -127,5 +131,9 @@
             <p>&copy; 2024 Mulita Bling - Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href="../css/style.css">-->
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Productos</title>
     <link rel="icon" href="../fotos/descarga (1).jpeg" type="image/jpeg">
 </head>
@@ -32,7 +33,7 @@
     <main>
         <!-- Un main con su h1 respectivo, por ahora esto va a ser una lista desordenada con algunos productos por las limitantes de conocimiento que tenemos a esta altura. Entiendo que con flex y probablemente java se puedan tirar codes para hacerlo mas estandar con otros shops al estilo de tiendanube-->
         <section>
-            <div>
+            <div data-aos="fade-up">
                 <h1>Nuestros productos</h1>
             </div>
         </section>
@@ -101,5 +102,9 @@
             <p>&copy; 2024 Mulita Bling - Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
 </body>
 </html>
