@@ -92,6 +92,8 @@ header .wrapper .menu .contenedor-menu .menu-superior a {
 }
 
 footer {
+  padding: 15px;
+  margin: 0px;
   background-color: #c76fcd;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
 }
@@ -237,6 +239,10 @@ section.text-center.my-4 p {
   margin-bottom: 50px;
 }
 
+section.embed-responsive-item {
+  width: 100%;
+}
+
 /* Colores */
 .productos {
   display: grid;
@@ -281,25 +287,60 @@ section.text-center.my-4 p {
 }
 
 /* Colores */
+.mb-5 {
+  width: 30%;
+}
+
 /* Colores */
 .seccion-contacto {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4666666667);
+}
+.seccion-contacto h1, .seccion-contacto p {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 .seccion-contacto .listas-formulario {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 15px;
 }
-.seccion-contacto .listas-formulario label, .seccion-contacto .listas-formulario input[type=text], .seccion-contacto .listas-formulario input[type=email], .seccion-contacto .listas-formulario textarea {
+.seccion-contacto .listas-formulario label {
+  text-align: center;
   font-size: 1.5rem;
   color: #7a1bb9;
 }
+.seccion-contacto .listas-formulario input[type=text],
+.seccion-contacto .listas-formulario input[type=email],
+.seccion-contacto .listas-formulario textarea {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: rgb(254.0408163265, 208.9591836735, 252.1224489796);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.seccion-contacto .listas-formulario input[type=submit] {
+  background-color: #000080;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.seccion-contacto .listas-formulario input[type=submit]:hover {
+  background-color: rgb(0, 38.5, 77);
+}
 
-@media (max-width: 934px) {
+@media (max-width: 1200px) {
   h1, h2 {
     font-size: 2rem;
   }
@@ -313,6 +354,11 @@ section.text-center.my-4 p {
     max-width: 90%;
     font-size: 1.3rem;
   }
+}
+@media (max-width: 1200px) and (max-width: 1200px) {
+  header .wrapper {
+    position: relative;
+  }
   header .wrapper .menu {
     display: none;
     flex-direction: column;
@@ -320,20 +366,18 @@ section.text-center.my-4 p {
     width: 100%;
     background-color: #c76fcd;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     box-sizing: border-box;
-  }
-  header .wrapper .menu .contenedor-menu {
-    box-sizing: border-box;
+    z-index: 1000;
+    border-top: 2px solid white;
   }
   header .wrapper .menu .contenedor-menu .menu-superior {
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
   }
-  header .wrapper .menu-toggle {
-    display: none;
+  header .wrapper .menu-toggle:checked + .icono-hamburguesa + .menu {
+    display: flex;
   }
   header .wrapper .icono-hamburguesa {
     display: block;
@@ -341,16 +385,9 @@ section.text-center.my-4 p {
     cursor: pointer;
     color: white;
   }
-  header .wrapper .menu-toggle {
-    display: none;
-  }
-  header .wrapper .menu-toggle:checked + .icono-hamburguesa + .menu {
-    display: flex;
-  }
-  header header .wrapper .menu-toggle {
-    display: none;
-  }
-  header img {
+}
+@media (max-width: 1200px) {
+  img {
     width: 100px;
   }
   .lanzamientos-index .grid-container {
@@ -372,7 +409,7 @@ section.text-center.my-4 p {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   h1, h2 {
     font-size: 2rem;
   }
